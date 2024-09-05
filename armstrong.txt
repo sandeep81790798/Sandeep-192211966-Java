@@ -1,0 +1,21 @@
+package saijava;
+import java.util.Scanner;
+public class practice {
+	public static void main(String[] arg) {
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int t,digit,sum=0;
+		t=n;
+		while(t!=0)
+		{
+			digit=t%10;
+			sum+=digit*digit*digit;
+			t/=10;
+		}
+		if(sum==n)
+			System.out.print("armstrong");
+		else
+			System.out.print("not armstrong");
+	}
+
+}

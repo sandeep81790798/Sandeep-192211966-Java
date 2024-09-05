@@ -1,0 +1,16 @@
+package practice;
+import java.util.Scanner;
+import java.util.Arrays;
+public class saveetha
+{
+public static void main(String[] args)
+{
+Scanner input = new Scanner(System.in);
+System.out.print("Enter a word: ");
+String word=input.nextLine();
+char[] letters=word.toCharArray();
+Arrays.sort(letters);
+String sortedword=new String(letters);
+System.out.println("sorted word is:"+sortedword);
+}
+}

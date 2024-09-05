@@ -1,0 +1,31 @@
+package saijava;
+import java.util.Scanner;
+public class pp {
+	public static void main(String[] arg)
+	{
+	Scanner input=new Scanner(System.in);
+	double es=0,os=0;
+	int i=0,j=0;
+	while(true)
+	{
+		int n=input.nextInt();
+	if(n==-1)
+		break;
+	if(n>0)
+	{
+		i++;
+		es+=n;
+	}
+	else
+	{
+		j++;
+		os+=n;
+	
+	}
+	}
+	double eavg=es/i;
+	double oavg=os/j;
+	System.out.println("the avg of positive is:"+eavg);
+	System.out.println("the avg of negitive is:"+oavg);
+}
+}

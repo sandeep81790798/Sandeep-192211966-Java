@@ -1,0 +1,18 @@
+package saijava;
+import java.util.Scanner;
+public class practice {
+	public static void main(String[] arg) {
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int rem=0,digit,t;
+		t=n;
+		while(t!=0)
+		{
+			digit=t%10;
+			rem=rem*10+digit;
+			t/=10;
+		}
+		System.out.println("reversed number is:"+rem);
+	}
+
+}

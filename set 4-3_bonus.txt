@@ -1,0 +1,31 @@
+package saijava;
+import java.util.Scanner;
+public class pp {
+	public static void main(String[] arg)
+	{
+	Scanner input=new Scanner(System.in);
+	int salary=input.nextInt();
+	double bonus=0;
+	char grade=input.next().charAt(0);
+	if(grade=='A'||grade=='a')
+	{
+		bonus=0.5*salary;
+	}
+	else if(grade=='B'||grade=='b')
+	{
+		bonus=0.10*salary;
+	}
+	else
+	{
+		System.out.println("invalid grade");
+		return;
+	}
+	if(salary<10000)
+	{
+		bonus=0.2*salary;
+	}
+	double totalsalary=salary+bonus;
+	System.out.println("bonus is:"+bonus);
+	System.out.println("total salary is:"+totalsalary);
+}
+}

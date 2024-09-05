@@ -1,0 +1,21 @@
+package saijava;
+import java.util.Scanner;
+import java.util.Arrays;
+public class pp {
+	public static void main(String[] arg)
+	{
+	Scanner input=new Scanner(System.in);
+	int n=input.nextInt();
+	int arr[]=new int[n];
+	int len=arr.length;
+	for(int i=0;i<len;i++)
+	{
+		arr[i]=input.nextInt();
+	}
+	int m=2;
+	n=3;
+	Arrays.sort(arr);
+	System.out.println(m+" maximum number:"+arr[len-m]);
+	System.out.println(n+"minimum num is:"+arr[n-1]);
+}
+}

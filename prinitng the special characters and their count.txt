@@ -1,0 +1,24 @@
+package practice;
+import java.util.Scanner;
+
+public class saveetha {
+    public static void main(String[] args) {
+    	Scanner input=new Scanner(System.in);
+        String s=input.nextLine();
+        char let[]=s.toCharArray();
+        int len=s.length();
+        int count=0;
+        for(int i=0;i<len;i++)
+        {
+        	if(let[i]>=65&&let[i]<=90||let[i]>=97&&let[i]<=122||let[i]>=48&&let[i]<=57)
+        	{
+        	}
+        	else
+        	{
+        		count++;
+        		System.out.print(let[i]);
+        	}
+        }
+        System.out.print("\n"+count);
+    }
+}

@@ -1,0 +1,23 @@
+package saijava;
+import java.util.Scanner;
+import java.util.Arrays;
+public class pp {
+	public static void main(String[] arg)
+	{
+	Scanner input=new Scanner(System.in);
+	String s=input.nextLine();
+	char arr[]=s.toCharArray();
+	int len=arr.length;
+	boolean prime=true;
+	for(int i=0;i<len;i++)
+	{
+		if(arr[i]!=arr[len-i-1])
+			prime=false;
+		break;
+	}
+	if(prime)
+		System.out.println("palindrome");
+	else
+		System.out.println("not a prime");
+}
+}

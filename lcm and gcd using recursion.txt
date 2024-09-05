@@ -1,0 +1,29 @@
+package practice;
+import java.util.Scanner;
+public class saveetha
+{
+public static void main(String[] args)
+{
+	int a=15;
+	int b=20;
+	int c=20;
+	int d=25;
+	int gcd=findgcd(a,b);
+	int gcd1=findgcd(c,d);
+	int lcm=(a*b)/gcd;
+	int lcm1=(c*d)/gcd1;
+	System.out.println("lcm and gcd is:"+lcm+","+gcd);
+	System.out.println("gcd is:"+gcd1+","+lcm1);
+}
+public static int findgcd(int x,int y)
+{
+	if(y==0)
+	{
+		return x;
+	}
+	else
+	{
+		return findgcd(y,x%y);
+	}
+}
+}

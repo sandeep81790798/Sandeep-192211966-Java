@@ -1,0 +1,14 @@
+package saijava;
+import java.util.Scanner;
+import java.util.Arrays;
+public class pp {
+	public static void main(String[] arg)
+	{
+	Scanner input=new Scanner(System.in);
+	int dec=input.nextInt();
+	String bin=Integer.toBinaryString(dec);
+	String oct=Integer.toOctalString(dec);
+	System.out.println("binary number is:"+bin);
+	System.out.println("octal number is:"+oct);
+}
+}

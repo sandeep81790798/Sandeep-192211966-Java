@@ -1,0 +1,24 @@
+package saijava;
+import java.util.Scanner;
+public class practice {
+	public static void main(String[] arg) {
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		int i,j,s;
+		for(i=1;i<=n;i++)
+		{
+			int a=1;
+			for(s=1;s<=n-i;s++)
+			{
+				System.out.print(" ");
+			}
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(a+" ");
+				a=a*(i-j)/j;
+			}
+			System.out.println();
+		}
+	}
+
+}
